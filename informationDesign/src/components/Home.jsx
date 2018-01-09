@@ -8,6 +8,7 @@ const homeStyle = {
   minHeight: '100%',
   backgroundColor: '',
   paddingTop: '4em',
+  paddingBottom: '60px'
 };
 
 const Home = () => (
