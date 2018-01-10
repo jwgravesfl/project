@@ -102,8 +102,8 @@ export default class Header extends Component {
           <Link to='/portfolio'>Portfolio</Link>
         </Menu.Item>
         <Menu.Item
-          name='portfolio'
-          active={activeItem === 'portfolio'}
+          name='contact'
+          active={activeItem === 'contact'}
           onClick={this.handleItemClick}
           style={menuItemStyle}
         >
