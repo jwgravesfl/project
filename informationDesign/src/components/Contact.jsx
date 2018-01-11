@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Button, Checkbox, Form, Grid, Card } from 'semantic-ui-react'
+import { Button, Form, Grid, Card } from 'semantic-ui-react'
 import { Redirect } from 'react-router'
 
 var sectionStyle = {
@@ -26,6 +26,9 @@ export default class Contact extends Component {
     state ={
       fName: '',
       lName: '',
+      email: '',
+      phone: '',
+      message: '',
       fireRedirect: false,
     };
 
@@ -65,7 +68,7 @@ export default class Contact extends Component {
                 <Card.Header style={ cardHeaderStyle }>
                   Contact J. Graves
                 </Card.Header>
-                <Form>
+                <Form id=''>
                   <Form.Field>
                     <label>First Name</label>
                     <input
@@ -76,6 +79,7 @@ export default class Contact extends Component {
                     onChange={e => this.change(e)}                    
                     />
                   </Form.Field>
+                 
                   <Form.Field>
                     <label>Last Name</label>
                     <input
@@ -85,11 +89,31 @@ export default class Contact extends Component {
                     value = {this.state.lName} 
                     onChange={e => this.change(e)} 
                     />
+                  </Form.Field>
 
-                  </Form.Field>
                   <Form.Field>
-                    <Checkbox label='I agree to the Terms and Conditions' />
+                    <label>Email Address</label>
+                    <input
+                    name='email' 
+                    type='email' 
+                    placeholder='you@youremail.com' 
+                    value = {this.state.email} 
+                    onChange={e => this.change(e)}
+                    required 
+                    />
                   </Form.Field>
+   
+                  <Form.Field>
+                    <label>Phone</label>
+                    <input
+                    name='phone' 
+                    type='text' 
+                    placeholder='Phone Number' 
+                    value = {this.state.phone} 
+                    onChange={e => this.change(e)}
+                    />
+                  </Form.Field>
+                  
                   <Button type='submit' onClick={e => this.onSubmit(e)}>Submit</Button>
                 </Form>
                 {fireRedirect && (
