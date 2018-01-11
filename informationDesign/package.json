@@ -3,6 +3,7 @@
   "description": "Designing and Developing Modern Progressive Web Apps",
   "version": "0.0.54",
   "dependencies": {
+    "firebase": "^4.8.2",
     "firebase-tools": "^3.16.0",
     "re-base": "^3.2.1",
     "react": "16.0.0",

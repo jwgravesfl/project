@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 
-
-
 var sectionStyle = {
     textAlign: 'center',
     color: 'black',
@@ -10,7 +8,7 @@ var sectionStyle = {
     paddingBottom: '2em'
 };
 
-export default class Resume extends Component {
+export default class ThankYou extends Component {
   render() {
     return (
       <div style={ sectionStyle }>

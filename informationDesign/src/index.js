@@ -7,6 +7,7 @@ import { BrowserRouter } from 'react-router-dom';
 import Footer from './components/Footer';
 
 
+
 var pageStyle = {
   backgroundColor: '', 
   minHeight: '100%'
