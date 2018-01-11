@@ -1,7 +1,7 @@
 import React from 'react'
 
 var containerStyle = {
-    backgroundColor: 'none',
+    backgroundColor: 'white',
     width: '100%',
     textAlign: 'center',
     left: '0',
@@ -11,6 +11,7 @@ var containerStyle = {
     fontFamily: 'Roboto, sans-serif',
     textTransform: 'uppercase',
     fontWeight: 'bold',
+    fontSize: '12px' 
 }
 
 const Home = () => (

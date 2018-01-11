@@ -4,6 +4,7 @@ import Home from './Home'
 import Resume from './Resume'
 import Portfolio from './Portfolio'
 import Contact from './Contact'
+import ThankYou from './ThankYou'
 
 var mainStyle = {
   textAlign: "",
@@ -22,6 +23,7 @@ const Main = () => (
       <Route path='/resume' component={Resume} />
       <Route path='/portfolio' component={Portfolio} />
       <Route path='/contact' component={Contact} />
+      <Route path='/thankyou' component={ThankYou} />
     </Switch>
   </main>
 )

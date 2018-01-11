@@ -3,6 +3,7 @@
   "description": "Designing and Developing Modern Progressive Web Apps",
   "version": "0.0.54",
   "dependencies": {
+    "firebase-tools": "^3.16.0",
     "react": "16.0.0",
     "react-burger-menu": "2.2.3",
     "react-dom": "16.0.0",

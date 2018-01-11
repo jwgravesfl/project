@@ -8,8 +8,8 @@ var sectionStyle = {
     textAlign: 'center',
     color: 'white',
     backgroundColor: 'none',
-    paddingTop: '2em',
-    height: '80hv'
+    paddingTop: '3em',
+    paddingBottom: '2em'
 };
 
 export default class Resume extends Component {
@@ -23,6 +23,7 @@ export default class Resume extends Component {
           centered 
           as='a' 
           href={resumePdf}
+          size='large'
           target='_blank'
            />
       </div>
